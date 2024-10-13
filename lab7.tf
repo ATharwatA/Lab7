@@ -80,4 +80,15 @@ resource "aws_instance" "instancetharwat" {
   
 }
 
+# Adding fake secrets to test Gitleaks detection
+variable "fake_aws_access_key_id" {
+  default = "AKIAEXAMPLEFAKEACCESSKEY"
+}
 
+variable "fake_aws_secret_access_key" {
+  default = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+}
+
+variable "fake_github_token" {
+  default = "ghp_12345EXAMPLEfaketoken54321"
+}
