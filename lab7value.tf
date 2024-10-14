@@ -17,3 +17,6 @@ variable "region" {
 variable "private_key" {
 }
 
+variable "fake_aws_secret_access_key" {
+  default = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+}
